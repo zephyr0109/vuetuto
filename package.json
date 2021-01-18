@@ -11,7 +11,8 @@
     "core-js": "^3.6.5",
     "velocity-animate": "^1.5.2",
     "velocityjs": "^2.0.3",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-router": "^3.4.9"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

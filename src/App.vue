@@ -1,73 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <!--<HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <!-- <Instance></Instance> -->
-    <!-- <TemplateTest></TemplateTest> -->
-    <!-- <ComputedPropsTest /> -->
-    <!-- <WatchProperty /> -->
-    <!-- <BasicBinding />
-    <hr />
-    <ClassBinding />
-    <hr />
-    <FormBinding />
-    <hr />
-    <ModifierBinding /> -->
-    <!-- <Events />
-    <hr />
-    <EventModifier />
-    <hr />
-    <CustomEvent /> -->
-    <!-- <ConditionRendering />
-    <hr />
-    <ListRendering /> -->
-    <Transition />
-    <hr />
-    <Animation />
-    <hr />
-    <CustomTransition />
-    <hr />
-    <MethodTransition />
+    <img alt="Vue logo" src="./assets/logo.png" /><br />
+    <router-link to="/ch01/instance">Ch01 - Instance link 1</router-link><br />
+    <router-link to="/ch02/TemplateTest">Ch02 - TemplateTest</router-link><br />
+    <router-link to="/ch03/ComputedPropsTest"
+      >Ch03 - ComputedPropsTest</router-link
+    ><br />
+    <router-link to="/ch04/WatchProperty">Ch04 - WatchProperty</router-link
+    ><br />
+    <router-link to="/ch05">Ch05 - Binding</router-link><br />
+    <router-link to="/ch06">Ch06 - Event</router-link><br />
+    <router-link to="/ch07">Ch07 - Condition / List Rendering</router-link
+    ><br />
+    <router-link to="/ch08">Ch08 - Animation</router-link><br />
+    <router-link to="/ch09">Ch09 - Directive / Filter</router-link><br />
+
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-// import Instance from "@/ch01/Instance.vue";
-// import TemplateTest from "@/ch02/TemplateTest";
-// import HelloWorld from "./components/HelloWorld.vue";
-// import ComputedPropsTest from "@/ch03/ComputedPropsTest.vue";
-// import WatchProperty from "@/ch04/WatchProperty.vue";
-// import BasicBinding from "@/ch05/BasicBinding";
-// import ClassBinding from "@/ch05/ClassBinding";
-// import FormBinding from "@/ch05/FormBinding";
-// import ModifierBinding from "@/ch05/ModifierBinding";
-// import Events from "@/ch06/Events.vue";
-// import EventModifier from "@/ch06/EventModifier";
-// import CustomEvent from "@/ch06/CustomEvent";
-// import ConditionRendering from "@/ch07/ConditionRendering";
-// import ListRendering from "@/ch07/ListRendering";
-import Transition from "@/ch08/Transition";
-import Animation from "@/ch08/Animation";
-import CustomTransition from "@/ch08/CustomTransition";
-import MethodTransition from "@/ch08/MethodTransition";
+import router from "@/router";
+
 export default {
   name: "App",
-  components: {
-    // WatchProperty,
-    // BasicBinding,
-    // ClassBinding,
-    // FormBinding,
-    // ModifierBinding,
-    // Events,
-    // EventModifier,
-    // CustomEvent,
-    // ConditionRendering,
-    // ListRendering,
-    Transition,
-    Animation,
-    CustomTransition,
-    MethodTransition,
-  },
+  router,
 };
 </script>
 
