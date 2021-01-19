@@ -14,6 +14,9 @@
     ><br />
     <router-link to="/ch08">Ch08 - Animation</router-link><br />
     <router-link to="/ch09">Ch09 - Directive / Filter</router-link><br />
+    <router-link to="/ch10">Ch10 - mixins</router-link><br />
+    <router-link to="/ch11/MainComponent">Ch11 - component</router-link><br />
+    <router-link to="/ch12/Reactive">Ch12 - reactive</router-link>
 
     <router-view></router-view>
   </div>

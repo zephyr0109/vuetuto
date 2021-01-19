@@ -28,6 +28,13 @@ import Ch09Router from "@/ch09/Ch09Router";
 import CustomDirective from "@/ch09/CustomDirective";
 import CustomFilter from "@/ch09/CustomFilter";
 
+import Ch10Router from "@/ch10/Ch10Router";
+import Mixin from "@/ch10/Mixin";
+
+import MainComponent from "@/ch11/MainComponent";
+
+import Reactive from "@/ch12/Reactive";
+
 import VueRouter from "vue-router";
 import BasicRouterView from "@/components/BasicRouterView";
 
@@ -128,6 +135,19 @@ const routes = [
       { path: "CustomDirective", component: CustomDirective },
       { path: "CustomFilter", component: CustomFilter },
     ],
+  },
+  {
+    path: "/ch10",
+    component: Ch10Router,
+    children: [{ path: "Mixin", component: Mixin }],
+  },
+  {
+    path: "/ch11/MainComponent",
+    component: MainComponent,
+  },
+  {
+    path: "/ch12/Reactive",
+    component: Reactive,
   },
 ];
 
