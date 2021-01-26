@@ -1,7 +1,7 @@
 <template>
   <div>
-    <SubComponent id="test1">sub component</SubComponent>
-    <SubComponent id="test2">zephyr</SubComponent>
+    <SubComponent id="test1" subkey="sub component">sub component</SubComponent>
+    <SubComponent id="test2" subkey="zep">zephyr</SubComponent>
   </div>
 </template>
 

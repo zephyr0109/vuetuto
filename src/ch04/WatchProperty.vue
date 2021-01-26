@@ -1,7 +1,7 @@
 <template>
   <div>
-    killometers : <input type="text" v-model="kilometers" /><br />
-    meters : <input type="text" v-model="meters" />
+    킬로미터 : <input type="text" v-model="kilometers" /><br />
+    미터 : <input type="text" v-model="meters" />
   </div>
 </template>
 
@@ -13,8 +13,6 @@ export default {
       meters: 0,
     };
   },
-  methods: {},
-  computes: {},
   watch: {
     kilometers: function (val) {
       this.kilometers = val;

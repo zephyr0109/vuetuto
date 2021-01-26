@@ -14,7 +14,6 @@ export default {
   data() {
     return {
       title: "Data Binding",
-      link: "http://www.naver.com",
       isactive: true,
       hasError: true,
       classes: {

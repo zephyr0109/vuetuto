@@ -1,9 +1,9 @@
 <template>
-  <div id="vue_det">
-    <h1>firstname : {{ firstname }}</h1>
-    <h1>lastname : {{ lastname }}</h1>
+  <div>
+    <h1>성 : {{ lastname }}</h1>
+    <h1>이름 : {{ firstname }}</h1>
     <h1>{{ mydetails() }}</h1>
-    <h1>{{ fullname }}</h1>
+    <h1>computed : {{ fullname }}</h1>
   </div>
 </template>
 
@@ -11,25 +11,25 @@
 export default {
   data() {
     return {
-      firstname: "ria",
-      lastname: "singh",
-      address: "mumbai",
+      firstname: "준열",
+      lastname: "임",
+      address: "서울",
     };
   },
   methods: {
     mydetails() {
-      return "I am " + this.firstname + " " + this.lastname;
+      return "나는 " + this.lastname + " " + this.firstname + " 입니다.";
     },
   },
   computed: {
     fullname: {
       set: function (fullName) {
         let namearr = fullName.split(" ");
-        this.firstname = namearr[0];
-        this.lastname = namearr[1];
+        this.lastname = namearr[0];
+        this.firstname = namearr[1];
       },
       get: function () {
-        return this.firstname + " " + this.lastname;
+        return this.lastname + " " + this.firstname;
       },
     },
   },

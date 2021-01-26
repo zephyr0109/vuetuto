@@ -1,6 +1,7 @@
 <template>
   <div :id="id">
     <h1><slot></slot></h1>
+    <h2>subkey : {{ subkey }}</h2>
   </div>
 </template>
 
@@ -13,6 +14,9 @@ export default {
     id: {
       type: String,
       required: true,
+    },
+    subkey: {
+      type: String,
     },
   },
 };

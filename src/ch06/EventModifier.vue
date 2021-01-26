@@ -2,7 +2,7 @@
   <div>
     <button @click.once="onClickOnce">click once</button>{{ clickOnce }}<br />
     <button @click="onClick">click</button>{{ clickNum }}<br />
-
+    <hr />
     <a href="http://naver.com" @click="onLinkClick" target="_blank"
       >original click</a
     ><br />
@@ -15,7 +15,7 @@
       @keyup.enter="onEnter"
       placeholder="이름을 입력하고 enter키를 치세요"
     />
-    <h3>{{ name }}</h3>
+    <h3>이름 : {{ name }}</h3>
   </div>
 </template>
 

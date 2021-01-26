@@ -2,8 +2,9 @@
   <div>
     firstname : <input type="text" v-model="firstname" /><br />
     lastname : <input type="text" v-model="lastname" /><br />
+    fullname : <input type="text" v-model="fullname" /><br />
     <h1>{{ firstname }} {{ lastname }}</h1>
-    <h1>computed method : {{ getfullname }}</h1>
+    <h1>computed method : {{ fullname }}</h1>
   </div>
 </template>
 
@@ -13,12 +14,17 @@ export default {
     return {
       firstname: "",
       lastname: "",
-      birthyear: "",
     };
   },
   computed: {
-    getfullname: function () {
-      return this.firstname + " " + this.lastname;
+    fullname: {
+      get() {
+        return this.firstname + " " + this.lastname;
+      },
+      set(fullname) {
+        this.firstname = fullname.split(" ")[0];
+        this.lastname = fullname.split(" ")[1];
+      },
     },
   },
 };

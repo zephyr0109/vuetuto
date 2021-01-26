@@ -11,6 +11,7 @@ export default {
   data() {
     return {
       title: "Data Binding",
+      // 아래의 변수를 사용하고 싶은 것
       link: "http://www.naver.com",
     };
   },

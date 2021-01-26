@@ -1,8 +1,8 @@
 <template>
   <div>
-    mixin test
-    <h1>see console log</h1>
-    <button @click="sameMethod">call same method</button>
+    mixin 테스트
+    <h1>콘솔을 확인하세요</h1>
+    <button @click="sameMethod">같은 이름의 메소드 호출</button>
   </div>
 </template>
 
@@ -16,6 +16,7 @@ export default {
   methods: {
     sameMethod() {
       console.log("same method in component");
+      this.onlyMixin("test");
     },
   },
 };

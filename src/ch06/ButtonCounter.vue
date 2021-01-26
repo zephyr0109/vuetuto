@@ -11,7 +11,12 @@ export default {
       counter: 0,
     };
   },
-  props: ["item"],
+  props: {
+    item: {
+      type: String,
+    },
+  },
+
   methods: {
     displayLanguage(lang) {
       this.$emit("showLanguage", lang);

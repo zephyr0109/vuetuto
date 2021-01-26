@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input type="checkbox" v-model="show" />change show<br />
+    <input type="checkbox" v-model="show" />change "show"<br />
     <span style="font-size: 25px"
       ><b>show : {{ show }}</b></span
     >

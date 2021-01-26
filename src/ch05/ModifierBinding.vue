@@ -1,10 +1,12 @@
 <template>
   <div>
-    <label>Enter Age</label><input v-model.number="age" />{{ age }}
+    <label>only number binding</label>
+    <input type="number" v-model.number="age" />
+    {{ age }}
     <br />
-    <label>Enter Message</label><input v-model.lazy="message" />{{ message }}
+    <label>lazy binding</label><input v-model.lazy="message" />{{ message }}
     <br />
-    <label>trim message</label><input v-model.trim="trimmsg" />{{ trimmsg }}
+    <label>trim binding</label><input v-model.trim="trimmsg" />{{ trimmsg }}
   </div>
 </template>
 
