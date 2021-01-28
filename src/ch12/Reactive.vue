@@ -2,7 +2,7 @@
   <div>
     <p style="font-size: 25px">counter : {{ counter }}</p>
     <button @click="counter++" style="font-size: 25px">incr count</button>
-    <div>{{ JSON.stringify(this.obj) }}</div>
+    <div>obj : {{ JSON.stringify(this.obj) }}</div>
   </div>
 </template>
 
